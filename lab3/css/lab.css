@@ -20,13 +20,13 @@ body {
 }
 
 #content {
-  width: 55%;
+  width: 72%;
   padding-right: 20px;
   float: left;
 }
 
 #form_border {
-  width: 40%;
+  width: 26%;
   background-color: #afafaf;
   border-radius: 10px;
   float: left;
@@ -51,35 +51,46 @@ input {
     margin-right: auto;
 }
 
-#SS_sidebyside {
+.SS_sidebyside {
   width: 100%
   overflow: hidden;
-}
-
-p.left {
-  width: 48%;
-  float: left;
-  text-align: center;
-  padding-right: 2%;
-}
-
-p.right {
-  width: 48%;
-  text-align: center;
-  float: left;
-  padding-left: 2%;
 }
 
 img.left {
   float: left;
   max-height: 500px;
-  max-width: 48%;
+  max-width: 46%;
+  padding-left: 2%;
   padding-right: 2%;
 }
 
 img.right {
   float: left;
   max-height: 500px;
-  max-width: 48%;
+  max-width: 46%;
   padding-left: 2%;
+  padding-right: 2%;
+}
+
+.txt_sidebyside {
+  width: 100%;
+  overflow: hidden;
+}
+
+p.left {
+  width: 46%;
+  height: 30px;
+  float: left;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+p.right {
+  width: 46%;
+  height: 50px;
+  text-align: center;
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
 }

@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab 2 - Our first HTML page!</title>
-	<link rel="stylesheet" type="text/css" href="..lab2/css/lab.css">
-	<link rel="stylesheet" type="text/css" href="lab2/css/lab.css">
+	<title>ART 101 - Shayan</title>
+	<link rel="stylesheet" type="text/css" href="..css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/site.css">
 </head>
 
 <body>
-	<div id="content">
-		<h1>
-			Introductions!
-		</h1>
-		<a href="https://www.youtube.com/watch?v=jHWKtQHXVJg&ab_channel=AwwAnimals">Check out this video!</a>
-		<div id="Tracie">
-			<p>
-				Yoyo! My name is Tracie and I'm one of the authors of this website. I'm a 3rd year AGPM major and I grew up in Hawaii. Here's my favorite animal!
-	<!---			link to favorite games/ artwork + an image, add a boder with css-->
-			</p>
-			<img src="lab2/img/redpanda.jpg">
-		</div>
-		<div id="Shayan">
-			<p>
-				Hello! My name is Shayan, and I am a 3rd year computer engineering student at UCSC. I was born and raised in San Diego, California. In my free time, I like to listen to music, mountain bike, go on drives, and camp.
-			</p>
-			<img src="lab2/img/capy1.png">
+	<div id="content_frame">
+		<div id=data>
+			<h1>Hello!</h1>
+			<h2>My name is Shayan. Here is a little bit about me:</h2>
+			<div id="professional_bio">
+				<p>
+					I am a 3rd year Computer Engineering student and Computer Science minor
+					at University of California, Santa Cruz. I was born and raised in San
+					Diego, and I want to be a Software Engineer in the future.
+				</p>
+				<p>
+					I have been programming for about 2 years, primarily in C/C++. One of my
+					favorite projects I ever worked on was the Six Degrees of Kevin Bacon
+					problem. The objective was to try to find connections between any two
+					actors and movies they have starred in. I implemented a solution using
+					a graph made up of actors as nodes, and movies as edges. After
+					performing a breadth first search, I could find the shortest path
+					between any two actors!
+				</p>
+			</div>
+			<br>
+			<div id="sidebyside">
+				<div id="personal_bio">
+					<p>
+						When I'm not doing schoolwork, I like to do things that are active and
+						outdoors. My interests tend to change often, but right now I am into
+						the following activities:
+						<ul>
+							<li>Mountain biking</li>
+							<li>Driving</li>
+							<li>Listening to music</li>
+							<li>Hiking</li>
+							<li>Programming</li>
+							<li>Spending time with family and friends</li>
+							<li>Going to the beach</li>
+						</ul>
+					</p>
+				</div>
+				<img id="portrait" src="img/cancun_self.jpg"/>
+			</div>
+			<br>
+			<div id="other_labs">
+				<p>
+					Check out my other ART 101 labs by clicking the links below:
+				</p>
+				<ul>
+					<li><a href="lab2/index.html">Lab 2: HTML & CSS Starter</a></li>
+					<li><a href="lab3/index.html">Lab 3: File Structure and File Transfer</a></li>
+					<li><a href="lab4/index.html">Lab 4</a></li>
+					<li><a href="lab5/index.html">Lab 5</a></li>
+					<li><a href="lab6/index.html">Lab 6</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </body>

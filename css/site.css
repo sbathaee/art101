@@ -1,16 +1,81 @@
+body {
+  background-image: url("../img/background.png")
+}
+
+#content_frame {
+  font-family: sans-serif;
+  background-color: white;
+  width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  border-width: 2px;
+  border-radius: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#data {
+  width: 550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
-  color: purple;
+  color: #b82a2a;
   font-size: 250%;
+  text-align: center;
+  margin-top: 25px;
 }
 
-#content {
-  border: dashed 2px #000000;
+h2 {
+  width: 550px;
 }
 
-#Tracie {
-  background-color: #f2b6bf;
+#professional_bio {
+  width: 550px;
 }
 
-#Shayan {
-  background-color: #b9f0b1;
+#sidebyside {
+  overflow: hidden;
+  border: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: #b8b8b8;
+}
+
+#personal_bio {
+  width: 298px;
+  float: left;
+  padding-right: 40px;
+  padding-left: 5px;
+}
+
+#personal_bio ul {
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#portrait {
+  width: 198px;
+  height: auto;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+#other_labs {
+  margin-bottom: 25px;
+  width: 550px
+}
+
+#other_labs p {
+  font-weight: bold;
+}
+
+#other_labs ul {
+  font-family: monospace;
 }

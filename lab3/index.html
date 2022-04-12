@@ -18,7 +18,7 @@
 				The purpose of this lab was to get a basic understanding of how file
 				structures work both in HTML/CSS and generally. To do this, we were told to
 				create a main webpage that contains links to other Art 101 labs. Mine
-				can be found <a href="../index.html">here</a>. Other required
+				can be found <a href="../index.html">HERE</a>. Other required
 				tasks included displaying a self portrait, creating a bulleted list, and
 				writing a lab report in HTML (which is what you are reading right now).
 			</p>
@@ -57,15 +57,35 @@
 				practice the skills that I have been learning in class.
 			</p>
 		</div>
-		<div id=quiz_border>
-			<div id=quiz>
+		<div id=form_border>
+			<form class="" action="index.html" method="post">
+				<p>*Note: This form doesn't do anything, it's just for looks.</p>
 				<h3>What did you think of my work?</h3>
-				<p>I thought it was hella ugly lol</p>
-			</div>
+				<select name="question1">
+					<option value="" disabled selected>Please Select</option>
+					<option value="great">Great</option>
+					<option value="good">Good</option>
+					<option value="average">Average</option>
+					<option	value="mediocre">Mediocre</option>
+					<option value="horrible">Horrible</option>
+				</select>
+				<h3>Do you have any suggestions for me?</h3>
+				<textarea name="question2" rows="8" cols="45"></textarea>
+				<br><br>
+				<input type="submit" value="Submit"/>
+			</form>
 		</div>
 	</div>
-	<div id=screenshot_wrap>
+	<div id="screenshot_wrap">
 		<h2>Screenshots:</h2>
+		<div id="SS_sidebyside">
+			<!--
+			<img src="" class="left" alt="">
+			<img src="" class="right" alt="">
+			-->
+			<p class="left">this is left text</p>
+			<p class="right">this is right text</p>
+		</div>
 	</div>
 </body>
 </html>

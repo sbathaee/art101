@@ -16,6 +16,7 @@ body {
 #content_wrap, #screenshot_wrap {
   padding: 20px;
   padding-bottom: 0px;
+  padding-right: 0px;
   overflow: hidden;
 }
 

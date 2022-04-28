@@ -23,6 +23,8 @@ function myFunc(username) {
   return nameSorted;
 }
 
+
+// swap - swaps the elements at index1 and index2 in the array
 function swap(index1, index2, array) {
   // creates new temporary variable to store the array element at index1
   var temp = array[index1];
@@ -59,27 +61,30 @@ function anagram(name) {
 }
 
 
-
+// spacedAnagram - creates an anagram of each word in the input, keeping the
+// spaces in the same places they were originally
 function spacedAnagram(name) {
-  var nameArray = name.split("");
-  var length = nameArray.length;
-  var finalArray = [];
+  var nameArray = name.split("");   // turn the input into an array
+  var length = nameArray.length;    // get the length
+  var finalArray = [];              // initialize output variables
   var strArray = [];
-  for (var i = 0; i < length; i++) {
-    if (nameArray[i] == " ") {
-      finalArray.push(anagram(strArray.join("")));
-      strArray = [];
+
+  for (var i = 0; i < length; i++) {                // for every element
+    if (nameArray[i] == " ") {                      // if the element is a space
+      finalArray.push(anagram(strArray.join("")));  // push the current string into our output
+      strArray = [];                                // reset the string
     }
-    else if (i == (length - 1)) {
-      strArray.push(nameArray[i]);
-      finalArray.push(anagram(strArray.join("")));
+    else if (i == (length - 1)) {                   // if we are at the last element
+      strArray.push(nameArray[i]);                  // push last element into string
+      finalArray.push(anagram(strArray.join("")));  // push last string into output
     }
     else {
-      strArray.push(nameArray[i]);
+      strArray.push(nameArray[i]);                  // push element into string
     }
   }
-  var correctArray = finalArray.join(" ");
-  return correctArray;
+
+  var correctArray = finalArray.join(" ");          // join the output with spaces between
+  return correctArray;                              // return result
 }
 
 // input

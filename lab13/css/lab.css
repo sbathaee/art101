@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  background-image: url(../img/stickfig.png);
+  background-size: 50px;
+  color: #FFF5EE;
+}
+
+#content {
+  background-color: #9370DB;
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+
+#report {
+  padding: 10px;
+}
+
+#title {
+  font-style: italic;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: 950px;
+  border-radius: 10px;
+}
+
+#output {
+  background-color: #66CDAA;
+  color: black;
+  font-family: monospace;
+  width: 950px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gold;
+  column-count: 4;
+}
+
+p {
+  width: 950px;
+  font-size: 12pt;
+  font-weight: lighter;
+}
+
+.numLine {
+  font-weight: bolder;
+}
+
+#title h3 {
+  color: #7B68EE;
+}

@@ -19,7 +19,6 @@ function fizzBuzzBoom(maxNum, factorObj) {
       var result = "";
       for (var factor in factorObj) { // iterate through dictionary
         if ((num % factor) == 0) { // if num is divisible by the key
-          count += 1;
           result += factorObj[factor]; // add the value to the string
         }
       }

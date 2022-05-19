@@ -25,7 +25,7 @@ function fizzBuzzBoom(maxNum, factorObj) {
       if (result) { // if result is not empty
         output = " - " + result + "!"; // format string
       }
-      $('#output').append("<p class='numLine'>" + num + output + "</p>"); // append the
+      $('#output').append("<p class='numLine'>" + num + output + "</p>"); // append the number and our phrases to our output
       output = ""; // reset output string
     }
 }

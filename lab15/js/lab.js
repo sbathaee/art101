@@ -14,7 +14,6 @@
 
 $("#activate").click(function() {
   var randomID = Math.floor(Math.random() * 2624); // generate a random comic ID up to their most recent comic
-  var img_link;
   $.ajax({
     // The URL for the request (from the api docs)
     url: "https://xkcd.com/" + randomID + "/info.0.json",
@@ -22,20 +21,21 @@ $("#activate").click(function() {
     type: "GET",
     // The type of data we expect back
     dataType : "json",
-    // What do we do when the api call is successful
+    // What do we do when the api call is successfully
     success: function(data) {
-      // insert the comic image into the output div
-      if ($("#comicImg").length == 0) {
-        $("#output").append("<img src='" + img_link + "' alt='comic' width=600px id='comicImg'>");
-      }
-      else {
-        $("#comicImg").replaceWith("<img src='" + img_link + "' alt='comic' width=600px id='comicImg'>");
-      }
+        // put the image into the HTML document
+        var img_link = data["img"];
+        if ($("#comicImg").length == 0) {
+          $("#output").append("<img src='" + img_link + "' alt='comic' width=600px id='comicImg'>");
+        }
+        else {
+          $("#comicImg").replaceWith("<img src='" + img_link + "'alt='comic' width=600px id='comicImg'>");
+        }
     },
     // What we do if the api call fails
     error: function (jqXHR, textStatus, errorThrown) {
-      // log the error
-      console.log("Error:", textStatus, errorThrown);
+        // log error
+        console.log("Error:", textStatus, errorThrown);
     }
   })
 });
